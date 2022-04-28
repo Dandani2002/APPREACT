@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
+import Main from "./pages/Main";
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,7 @@ export default function Router() {
             <Stack.Screen name="Products" component={Products} />
             <Stack.Screen name="Cart" component={Cart} />
             <Stack.Screen name="About" component={About} />
+            <Stack.Screen name="Main" component={Main} />
          </Stack.Navigator>
      </NavigationContainer>
   );
