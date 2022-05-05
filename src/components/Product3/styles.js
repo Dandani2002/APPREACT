@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
     detailsView: {
         paddingVertical: 10,
         paddingHorizontal: 10,
-        
     },
     productName: {
         fontSize: 15,

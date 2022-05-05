@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
@@ -6,16 +5,23 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        width: '50%',
-        height: 300,
+        width: 350,
+        height: 250,
         borderBottomColor: '#007AFF',
-        borderBottomWidth: 4,
+        borderBottomWidth: 2,
         borderBottomStartRadius: 20,
         borderBottomEndRadius: 20,
         borderTopEndRadius: 20,
         borderTopStartRadius: 20,
-        borderTopWidth: 4,
+        borderTopWidth: 2,
         borderTopColor: '#007AFF',
+        borderWidth: 2,
+        borderColor: '#007AFF',
+        alignSelf: "center",
     },
+    
 });
+
 export default styles;
+
+

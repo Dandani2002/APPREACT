@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import styles from './styles';
 
-export default function Product(props) {
+export default function Product3(props) {
  return (
      <View>
         <View style={styles.detailsView}>
@@ -11,17 +11,16 @@ export default function Product(props) {
 
             
         <View style={styles.productDescription}>
-            <Text>Desenvolvido por e para profissionais</Text>
-            <Text>Switches GX Blue Clicky de nível profissional</Text>
-            <Text>Design TKL, compacto e ultraportátil</Text>
-            <Text>LIGHTSYNC RGB</Text>
-            <Text>Cabo removível</Text>
+            <Text>Desenvolvido para profissionais</Text>
+            <Text>Switches de nível profissional intercambiáveis pelo usuário</Text>
+            <Text>Compacto + Ultraportátil</Text>
+            <Text>Cabo removível</Text> 
         {props.description}</View>
 
 
 
         <View style={styles.productabout}>
-          <Text>________________________________________________________</Text>
+        <Text>________________________________________________________</Text>
           <Text>Descrição do teclado: Jogos</Text>
           <Text>Características especiais: Mecânico </Text>
           <Text>Dispositivos compatíveis: Console de jogos</Text>

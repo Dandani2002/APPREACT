@@ -7,9 +7,8 @@ export default function ButtonCart(props) {
     <View style={styles.cartArea}>
         <Button
         onPress={props.onPress}
-        title="Adicionar ao carrinho"
-        color="#007AFF"
-        accessibilityLabel="Adicionar ao carrinho"
+        title = {props.nome}
+        color="#008080"
         />
     </View>
   );

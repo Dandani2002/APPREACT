@@ -1,19 +1,20 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { SafeAreaView } from 'react-native';
+import Sobre from '../../components/Sobre';
 
 export default function About() {
- return (
-     <View style={styles.container}>
-         <Text>About</Text>
-         <Button title='Navigate back'/>
-     </View>
-  );
+    
+    const navigation = useNavigation();
+        return (
+            <SafeAreaView>
+                <Sobre/>
+            </SafeAreaView>
+        );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-});
+
+
+
+
+
