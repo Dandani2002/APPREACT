@@ -29,7 +29,7 @@ function Home ({ navigation }) {
             <Text>Email: {email}</Text>
             <Text>Senha: {password}</Text>
             <Text>Home Screen</Text>
-            <Button title='Ir para a página principal' onPress={() => navigation.navigate('Principal')} />
+            <Button title='Ir para a página principal' onPress={() => navigation.navigate("Principal")} />
         </View>
     )
 }

@@ -23,7 +23,7 @@ export default function Router() {
             <Stack.Screen name="Products4" component={Products4} />
             <Stack.Screen name="About" component={About} />
             <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="Página Principal" component={Principal} />
+            <Stack.Screen name="Principal" component={Principal} />
             <Stack.Screen name="Wiki" component={Wiki} />
          </Stack.Navigator>
      </NavigationContainer>
