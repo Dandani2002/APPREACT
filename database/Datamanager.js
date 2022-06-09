@@ -42,4 +42,9 @@ export default class Datamanager {
            tx.executeSql(sqlDelete, [id]);
        });
    }
+   async updateUser(user) {
+       (await db).transaction(tx => {
+           tx.executeSql(sqlUpdate, [user.email, user.password]);
+       })
+   }
 }

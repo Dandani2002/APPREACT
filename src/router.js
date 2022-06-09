@@ -1,5 +1,7 @@
+import React, {useEffect} from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+
 import Products from "./pages/Products";
 import Products2 from "./pages/Products2";
 import Products3 from "./pages/Products3";
@@ -9,10 +11,14 @@ import Principal from "./pages/Main";
 import Wiki from "./pages/Wiki";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import { useEffect } from "react";
 
 const Stack = createStackNavigator();
 
-export default function Router() {
+function Router() {
+    useEffect(() => {
+        console.log('Teste');
+      },[]);
  return (
      <NavigationContainer>
          <Stack.Navigator initialRouteName="Login">
@@ -29,3 +35,5 @@ export default function Router() {
      </NavigationContainer>
   );
 }
+
+export default Router;
