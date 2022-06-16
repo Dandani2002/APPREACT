@@ -16,6 +16,7 @@ export default function Principal() {
             
             <ButtonCart nome = "Sobre o Criador" onPress={() => navigation.navigate('About')}/>
             <ButtonCart nome = "O que é um teclado mecânico" onPress={() => navigation.navigate('Wiki')}/>
+            <ButtonCart nome = "Cadastro" onPress={() => navigation.navigate('Cadastro')}/>
         </SafeAreaView>
   );
 }

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Products from "./pages/Products";
 import Products2 from "./pages/Products2";
@@ -11,17 +11,15 @@ import Principal from "./pages/Main";
 import Wiki from "./pages/Wiki";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import { useEffect } from "react";
+import DatabaseInit from "./../database/DatabaseInstance";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 function Router() {
-    useEffect(() => {
-        console.log('Teste');
-      },[]);
+    
  return (
      <NavigationContainer>
-         <Stack.Navigator initialRouteName="Login">
+         <Stack.Navigator initialRouteName="Principal">
             <Stack.Screen name="Cadastro" component={Login} />
             <Stack.Screen name="Products" component={Products} />
             <Stack.Screen name="Products2" component={Products2} />
